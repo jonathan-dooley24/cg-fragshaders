@@ -15,5 +15,5 @@ void main() {
 	temp.x = (round(temp.x * 4.0)) / 4.0;
 	temp.y = (round(temp.y * 4.0)) / 4.0;
 	temp.z = (round(temp.z * 4.0)) / 4.0;
-    FragColor = texture(image, texcoord) * temp;
+    FragColor = temp * texture(image,texcoord);
 }
