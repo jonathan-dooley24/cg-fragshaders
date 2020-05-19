@@ -10,7 +10,7 @@ out vec4 FragColor;
 
 void main() {
 	vec4 temp = texture(image, texcoord);
-	float luminance = 0.299 * temp.x + 0.587 * temp.y + 0.114 * temp.z;
+	var luminance = 0.299 * temp.x + 0.587 * temp.y + 0.114 * temp.z;
 	vec4 color = vec4(luminance, luminance, luminance, 1.0); 
 	FragColor = color;
 }
